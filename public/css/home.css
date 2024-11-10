@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    z-index: 999;
+    background-color: white;
+}
+
+#home{
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), silver url("/img/electronics.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 300px; */
+}
+
+.homeTitle{
+    font-size: 50px;
+}
+
+.homeTitle p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbarButton:hover{
+    text-decoration: underline;
+    opacity: .7;
+    transition: .15s;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 991px) {
+    .navbarButton{
+        padding-left: 8px;
+    }
+    .navbarButton:hover{
+        transition: .15s;
+        background-color: lightgray;
+        text-decoration: none;
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
